@@ -8,6 +8,7 @@ public interface Carinterface {
 	//only method declaration
 	//no need to write abstract keyword also.
 	//we achieve 100% abstraction.
+	//cannot create the object o interface.
 	
 	public void start();
 	public void stop();

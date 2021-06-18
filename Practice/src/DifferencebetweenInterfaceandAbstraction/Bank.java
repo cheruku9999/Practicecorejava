@@ -28,6 +28,7 @@ public abstract class Bank {
 //Hiding the implementation logic is called Abstraction
 //giving abstract keyword the class becomes abstract class
 //In abstract class atleast one method should be there which is Abstract in nature.
+//Abstration mean 0 to 100% abstraction
 //Now what is Abstract method: 
  //Only prototype means only method declaration, no method body.
 //Abstract class can have abstract methods and non abstract methods. Which is called abstraction.
