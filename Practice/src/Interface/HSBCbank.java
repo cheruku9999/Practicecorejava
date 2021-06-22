@@ -1,5 +1,6 @@
 package Interface;
 
+
 public class HSBCbank implements USbank,BrazilBank {//we are achieving multiple inheritance or Is-a-relationship
 //If a class is implementing any Interface, then its mandatory to define/override all the methods of Interface.
 	// Eg: whatever the methods in usbank interface we need to implements all those methods in hsbc bank class

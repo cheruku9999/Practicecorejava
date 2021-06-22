@@ -22,6 +22,7 @@ public class TestBank {
 		ic.mutualfunds();
 		ic.transfermoney();
 		ic.trading();
+		ic.Fin();
 		
 		//to call the static variable which is there in usbank interface
 		

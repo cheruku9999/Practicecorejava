@@ -1,6 +1,6 @@
 package InterfaceVSAbstractlatest;
                                                //*************
-public class icicibank implements USBank,RBI { //a particular class can implements multiple interfaces
+public class icicibank extends Finance implements USBank,RBI { //a particular class can implements multiple interfaces, but can extends only single class.
 	//rbi interface
 	
 	@Override
