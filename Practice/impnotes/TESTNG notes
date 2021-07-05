@@ -1,0 +1,92 @@
+TEstng --unit test framework
+TDD framework-- Test Driven Development
+purpose--design test cases in a systematic way
+--html reports
+--different annotation
+--priorities/sequences
+--dependency
+--grouping
+--data provider
+
+testng--open source, free
+jar files
+java unit tesitng framework
+
+install testng in eclipse: We can go to help click on install new software
+http://beust.com/eclipse/
+
+package com.test;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class testngbasics {
+//Pre conditions annotations--->starting with @Before
+	
+	@BeforeSuite
+	public void setup()
+	{
+		System.out.println("setup system property for chrome");
+	}
+
+	@BeforeClass
+	public void launchBrowser()
+	{
+		System.out.println("login into app");
+	}
+	
+@BeforeMethod
+public void enterURL()
+{
+	System.out.println("enter url");
+}
+
+@BeforeTest
+public void login()
+{
+	System.out.println("launch browser");
+	}
+//test cases---starting with @Test
+@Test
+public void googtitletest()
+{
+	System.out.println("google title test");
+		
+}
+@Test
+public void searchtest()
+{
+	System.out.println("search test");
+		
+}
+//post conditions--->starting with @After
+@AfterMethod
+public void logout()
+{
+	System.out.println("logout from app");
+}
+
+@AfterTest
+public void deleteallcookies()
+{
+	System.out.println("delete all cookies");
+}
+@AfterClass
+public void closebrowser()
+{
+	System.out.println("close browser");
+}
+@AfterSuite
+public void generatetestreport()
+{
+	System.out.println("generate test report");
+}
+
+}

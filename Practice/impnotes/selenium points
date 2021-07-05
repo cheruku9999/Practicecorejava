@@ -1,0 +1,92 @@
+package naveentestng;
+
+public class notesselenium {
+
+//Testng and junit are unit test frameworks
+//Purpose is to design test cases in a systamtic way
+
+//There are 7 types of selectors
+	
+/*	
+ 
+ 
+ 
+1)Xpath
+
+//absoulute x-path should not be used eg: html/body/div[1]/div[5]/div[2]/a
+//only relative xpath should be used eg: //*[@id='firstname']
+ 
+driver.findElement(By.xpath("//*[@id='firstname']")).sendKeys("tom");
+
+2)id
+driver.findElement(By.id("firstname")).sendKeys("tom");
+
+3)name
+driver.findElement(By.name("firstname")).sendKeys("tom");
+
+4)linkText:this is only for links
+driver.findElement(By.linkText("Sign in")).click;
+
+5)partialLinkText: not such useful
+driver.findElement(By.partialLink("how to pick")).click;
+
+6)Cssselctor
+//if id is there then css selector is----  #{id}
+ 
+// if class is there then css selector is --  .{class}
+ 
+
+driver.findElement(By.cssSelector("#address1")).sendKeys("tom");
+
+7)class name--not useful
+
+driver.findElement(By.className("firstname")).sendKeys("tom");
+
+**Very important
+@CacheLookup--To improve the performance of the script. 
+Advantages:
+How it works:
+1)Lets suppose the element is hitting the browser number of times to get the element path.There will be performance issues.
+2)So if we use @CacheLookup for that element, there will be temporary memory created if we use @cachelookup.
+3)So next time it will not go to browser every time it will taken from @cachelookup
+
+Disadvantages:
+1)Let see we are in homepage, if that page is refreshed then this cache memory will be corrupted. We will get stale element exception.
+2)May be when dom model be changed in that case cache memory element will be staled or disturbed. 
+
+
+//How to handly dropdown"
+ 
+/by using select class. eg: 
+ 
+ Select  select=new Select();
+ 
+Select  select=new Select(driver.findElement(By.id(state)));
+
+select.selectByVisiableText("California");
+
+
+Html report in testng
+
+how to get index.html file?
+1)After execution of test we need to refresh the project everytime.
+2)We will get testoutput folder inside this we will see index.html-->righclick copy the locaiton path and copy in any browser.
+
+
+Advantages of Selenium:
+
+1)It is on opensource
+2)Supports various operating systems
+3)supports various propgramming languages
+4)supports various browser environment
+5)supports parallel testing
+6)uses less hardware resouces for automation
+7)To avoid repetative tasks
+8)
+
+Disadvantages:
+1)Supports only web applications
+2)no reilable support from any one
+3)new features may not work correctly
+4)	
+}

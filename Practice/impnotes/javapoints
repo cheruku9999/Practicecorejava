@@ -1,0 +1,91 @@
+package OOPS;
+
+
+
+/*Java collections are Frameworks.
+/Framework: To store and manipulate the groups of objects.
+/Operations: Searching Insertion,Manipulation,Deletion,Sorting
+
+/Interfaces: Set,List,Quee, Deque
+/Classes: Arraylist, Vector, Linkedlist, Hashset, Treeset, Priorityquee
+/In java.util package we will having all these classes
+
+
+//implicitwait: wait for n number of seconds before you throw exception. It is global wise.
+	//eg: if we give 5 seconds go wait, but page loads in 2 seconds is continues and doesnt wait for 5 seconds.
+	//disadvantage:
+	
+	//explict wait: its applicable to particular element level only.
+	//formatting of code: ctrl+shift+f
+	//make sure class name starts with caps
+	//variable name should always starts with small letters
+	//sysout +ctrl+space: systemoutprintln
+//if we want to write any reusable methods we should write outside of main block only.
+//we can call a method without creating an object of that class, by making that method static. 
+ * 
+ * //we cannot create a method within a method
+ //methods are independent to each other
+ //methods are parallel to each other
+//duplicate methods-->same method name with same number of arguments and same datatypes are not allowed
+ * 
+Method over riding-->
+//when same methods are present in parent class as well as child class with same name and same number of arguments is called
+ * method over riding.
+ * 
+method overloading-->when the method name is same with different arguments or input parameters  and different datatypes within the same class	
+
+//Polymophisym-->one to many. There are 2 types. 1)Static or compile time.2)Dynamic or runtime
+
+Difference between Abstraction and Interface
+
+
+Abstraction:
+//abstract method means only prototype or method declaration no method body
+//this is partial abstraction..means it has both abstract and non abstract methods
+//abstraction means: Hiding the implementation logic
+//Cannot create the object of abstract class
+ //Abstractions classes are faster from performance prospective.
+  * 
+  Interface:
+ //in interface we should have only abstract methods.
+//no method body
+//only method declaration or only prototype
+//we achieve 100% abstraction 
+//Cannot create the object of interface class
+ * 
+ //When we use abstraction and interface:
+  1) When we want to achieve 100% abstraction and hide 100% implementation logic that time we need to use interface.
+  2)And whenever we need to partial abstraction then we need to use abstract classes
+  * 
+ Final:
+ //final keyword is used to define constant values
+//final keyword is also used to prevent inheritance
+//to prevent method overriding
+  * 
+ Finally:
+ //Finally is a block is used with try and catch blocks
+//finally eg:
+//1)if we cannot connect to database or connected to db and cannot retrive data exceptions is cmg. We can write method  in finally block to close the db connection/
+//2)in selenium also we can use driver.quit
+  * 
+ Finalize:
+ //Finilize is a method
+ //finalize method is used to perform cleanup or the garbage cleaning.
+//it is used to cleanup processing of the object
+ * 
+ Constructors
+ //constructor is, it executes a block of code whenever an object is created
+//constructor will not return values unlike methods
+//name of constructor should be the class name only		
+		contructordemo cc= new contructordemo();
+		//whenever you create object a constructor is called in java
+	//eventhough we donot define any constructor, compiler will called default or implicit constructor	
+ * 
+ * 
+ //formatting of code: ctrl+shift+f
+//make sure class name starts with caps
+//variable name should always starts with small letters
+//sysout +ctrl+space: systemoutprintln
+////we can write the live code in debug mode. Just put the breakpoint for the line which you want the code and run as debug mode and right click on that line and click on "Watch"
+*/
+

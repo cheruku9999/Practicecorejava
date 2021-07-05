@@ -1,0 +1,9 @@
+Apache POI API--this is the api to connect from excel to java test cases.
+To connect between excel and java there is one library called POI API.
+There will be common interview question where how can to drive data from excel to java test. 
+Answer is Apache poi api
+Always a good practise to put excel in our project
+package com.excelutility; this is excel utilities pacakage we are being copeid. These are generic or standard methods provided by excel in java
+Starting of jenkins: In cmd go to patch where jenkins.war file is installed.
+EG: C:\Users\SrinivasCheruku>java -jar jenkins.war.
+By defalut jenkins runs on 8080 port. So in any browser we can just type--->localhost::8080

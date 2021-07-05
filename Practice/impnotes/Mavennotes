@@ -1,0 +1,91 @@
+/*package maven;
+
+public class Notes {
+
+	
+	
+Assume there are 40 people working in project i have devlop a base framework and i want to share to other guys. But once took
+into his local he have to again configure all the required jars in his local. And tomorrow the jars may get updated and
+again we need to delete and configure new jars which is tedious task. Hence this is not good practice.
+So to avoid that Maven has came into picture.
+
+	1)Maven is central repository to get all dependencies
+	2)Bascially we donot hardcode the jars in the project, we will get from maven, so that any one can download our project and can use.
+	3)whenever we build project with manven configurations you need not provide any jars.
+	4)Maven automatically connects to this website and looks what are the jars required.
+	5)Downloads them and place it in project build path.
+	6)So that's y we call project management tool and also build management tool
+
+
+We need to pass the below 4 lines on xml tags into our project which we will get from maven repository
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-alpha-7</version>
+</dependency>
+1.maven identifies the selenium project uniquely using groupid. So basically it identifies the project uniqeuly.
+2.artifact id is sub of group id. So its basically a name of the jar
+
+****POM.XML is the heart of maven
+to check the maven version
+
+******
+Maven Sure fire plugin is needed to execute all the test cases in maven project
+
+
+whatever maven command we will execute we need to execute from project level. So we need to go that patch in cmd mode and needs to executes the cmds.
+we can get the patch by right click on mavenproject-->properties-->copy the loaction. And navigate to that location in cmd.
+maven commands
+in cmd-->type mvn --version
+
+mvn clean--->it will delete all temp files or builds whatever current prject have.
+mvn compile-->it compiles all the code and see if there are any syntax errors.
+mvn test-->will run the tests. IF WE GIVE DIRECTLY TEST WITHOUT CLEAN AND COMPILE, TEST WILL CLEAN AND COMPILE AUTOMATICALLY
+
+** WHEN WE RUN MVC TEST, IT WILL FIRST CHECKS IN LOCAL FILE(.M2) WHICH AUTOMATICALLY CREATES. IF THE REQURED JARS ARE
+NOT AVAIABLE THEN ONLY MAVEN GOES TO MAVEN REPOSITORY TO BRING THE REQUIRED JARS.
+
+**by default maven expects the word Test at end of file.So that is the reason we have used test(appiumTest,restaapiTest,seleniumTest)
+}
+
+**we need to put this below code under surepire plug in poxml so that we can execute test from testng
+<configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile> (the name testng is defalut name we must change based on name which we given in project level
+          </suiteXmlFiles>
+        </configuration>
+
+**Profiles
+
+<profiles>
+<profile>
+<id>regression</id>
+  <build>
+Profiles are used to decide which suite needs to be run whether smoke or regression. We need to put the reqruied testng xml file in the below code in pom.xml
+1)
+ <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+          <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng2.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        </plugin>
+        
+ 2)In cmd we need to give the below cmd
+   " C:\Users\SrinivasCheruku\eclipse-workspace\javatraining\Mavenjave>mvn test -PRegression"
+   P stands for profile, and regression is id
+   
+   
+   How do you bring the excel into your testproject(eclipse)
+   
+  ans: Using Apache poi api
+   
+   maven dependencies
+   
+   ans: POI, POI-ooxml
+*/

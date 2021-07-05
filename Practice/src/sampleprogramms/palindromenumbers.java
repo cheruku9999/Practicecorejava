@@ -10,6 +10,7 @@ public class palindromenumbers {
 
 	public static void palidrome(int num)//writing static method
 	{
+		System.out.println("the given number is" + num);
 		int r=0;
 		int sum=0;
 		int t;
