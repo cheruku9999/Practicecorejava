@@ -9,3 +9,32 @@ Step6: Create a project in eclipse or its fine if there is already a project.
 Step7: Righclick on project-->Team-->Share-->Add to git reposiotory.
 Step8: Commit and Push the project to the repository.
 Step9: Commit and push every change in the repository.Move to Staged changes section.
+
+
+To add code into git from eclipse
+
+1)In cmd go to project location(eg:C:\Users\SrinivasCheruku\git\Freecrmtest\FreeCRMTest) 
+we will get by rightclicking on project properties-->Resource.
+ 2)Now in cmd check the status with command...git status. If there any data to be checkin it will show.
+3)Now to add code give the cmd.."git add ."(git add dot)
+4)Now again git status..we could see the content as green, means everything is saved.
+5)Now we need to commit the code to git, so cmd is "git commit -m "comments".
+6)Now "git push origin master"
+********************************************
+To run to run from jenkins.
+
+We need to start the jenkins .
+
+1)So we need to go to jenkins folder location and need to execute jenkins.war file
+eg: C:\Users\SrinivasCheruku>java -jar jenkins.war
+
+To verify whether jenkins is up and running. In browser type: localhost::8080
+
+
+NOTE: if 8080 port is busy we need to setup ur own port. And below are the steps.
+
+ C:\Users\SrinivasCheruku>java -jar jenkins.war --httpPort=8081
+ ******************************
+ To run eclipse code in jenkins through git
+ 
+ 1)

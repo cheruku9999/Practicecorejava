@@ -90,3 +90,13 @@ Disadvantages:
 3)new features may not work correctly
 4)	
 }
+
+WebDriver driver= new ChromeDriver();  //for launching the browser. new ChromeDriver is child class object which is referred by parent interface reference variable (driver)
+driver.get("http://www.google.com");   //for entering url
+WebDriver driver1= new FirefoxDriver();
+WebDriver driver1= new InternetExplorerDriver();
+
+here WebDriver is parent class interface which is referred by child class object(new ChromeDriver()) with driver reference variable.
+
+When do we get illegal state exception error?
+Ans: when we launch the browser without setting up the system property of that browser
